@@ -54,7 +54,15 @@ public class AlumnoCRUD {
             System.out.println("Fallo al leer");
         }
         return listaAlumnos;
+
+        
     }
+    public void altaAlumno(Alumno alumno) {
+    ArrayList<Alumno> listaAlumno = leerAlumnos();
+    listaAlumno.add(alumno);
+    escribirAlumnos(listaAlumno);
+}
+
 
 
 }
